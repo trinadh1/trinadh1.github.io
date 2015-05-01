@@ -1,0 +1,30 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.vcenter p {
+ font-family: "Merriweather",serif;
+ font-style: italic;
+}
+.vcenter h1 {
+  font-family: "PT Sans",sans-serif;
+  font-weight: 900;
+  color:white;
+}
+.vcenter {		
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 1px solid transparent;
+}
+
+a{
+	&:hover {
+  text-decoration: none;
+}
+}
+
+header {
+  nav.navbar {
+    margin-bottom: 0;
+  }
+}

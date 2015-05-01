@@ -1,0 +1,74 @@
+#land {
+	.land-col {
+		background-color: black;
+		color: white;
+		text-align: center;
+		height: 100vh;
+		transition: background-size 1s ease-out;
+		background-size: auto 130%;
+		background-position: center center;
+
+		&:hover {
+			// background-color: yellow;
+			background-size: auto 100%;
+		}
+	}
+
+	#studio {
+		background-image: url("http://codetic.net/demo/themes/privado/wp-content/themes/privado/img/img-1-large.jpg");
+	}
+	#work {
+		background-image: url("http://codetic.net/demo/themes/privado/wp-content/themes/privado/img/img-2-large.jpg");
+	}
+	#team {
+		background-image: url("http://codetic.net/demo/themes/privado/wp-content/themes/privado/img/img-3-large.jpg");
+	}
+	#contact {
+		background-image: url("http://codetic.net/demo/themes/privado/wp-content/themes/privado/img/img-4-large.jpg");
+	}
+
+
+	#studio .vcenter {
+		top: 30%;
+	}
+	#work .vcenter {
+		top: 40%;
+	}
+	#team .vcenter {
+		top: 50%;
+	}
+	#contact .vcenter {
+		top: 60%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+	#land .lan-col {
+		height:25vh;		
+	}
+
+	#work{
+		#team{}
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transform: translateY(100%);
+			transition: all 0.6s ease-in;
+
+
+		}
+
+		&:hover {
+			img {
+				transform: translateY(0);
+
+			}
+		}
+	}
+
+}
+

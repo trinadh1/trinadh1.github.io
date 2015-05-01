@@ -1,0 +1,17 @@
+#profile {
+  .left{
+    background-color: black;
+    height:100vh;
+    position:fixed;
+
+    .sidebar {
+      border: 1px solid transparent;      
+      img {border-radius: 100%;}
+      text-align:center;
+      color:white;
+    }
+
+    
+  }
+  
+}
