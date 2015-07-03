@@ -7,14 +7,22 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" href="{{ '/css/animate.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/number-pb.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}">
+
+  
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="{{ '/js/jquery.velocity.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/js/number-pb.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ 'http://mynameismatthieu.com/WOW/dist/wow.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
+
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
-<script>
- new WOW().init();
-</script>
+  <script>
+   new WOW().init();
+ </script>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
