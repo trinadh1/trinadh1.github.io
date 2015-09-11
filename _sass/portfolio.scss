@@ -1,3 +1,44 @@
+.all {
+  height:250px;
+  margin-bottom: 30px;
+}
+#portfolio {
+    background-color:#2980b9;
+    height:100vh;
+  }
+  
+  .text h1{
+  color:black;
+}
+ul li {
+  list-style: none;
+}
 #calci1{
   background-color: green;
+}
+.box {
+    border:3px solid white;
+    height:250px;
+
+
+}
+.text-overlay {
+  position: absolute;
+  bottom:0%;
+  width:auto;
+ font-family: "PT Sans",sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ text-transform: uppercase;
+
+  visibility: hidden;
+  color: #fff;
+  padding: 20px 20px;
+  margin:0;
+}
+
+.img-overlay:hover .text-overlay {
+  visibility: visible;
+  
+
 }

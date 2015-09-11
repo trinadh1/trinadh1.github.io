@@ -5,28 +5,40 @@
 
 $(document).ready(function(){
 
-  $('#all9').click(function(){
+
+  $('#all9').click(function(ev){
+    ev.preventDefault();
     $('.all').fadeIn(1500);
   });
 
-  $('#psd9').click(function(){
+  $('#advid9').click(function(ev){
+    ev.preventDefault();
     $('.all').hide();
-    $('.psd').fadeIn(2000);
+    $('.advid').fadeIn(1500);
   });
 
-  $('#calci9').click(function(){
+  $('#psd9').click(function(ev){
+     ev.preventDefault();
     $('.all').hide();
-    $('.calci').fadeIn(2000);
+    $('.psd').fadeIn(1500);
   });
 
-  $('#puzzle9').click(function(){
+  $('#calci9').click(function(ev){
+     ev.preventDefault();
     $('.all').hide();
-    $('.puzzle').fadeIn(2000);
+    $('.calci').fadeIn(1500);
   });
 
-  $('#jumbled9').click(function(){
+  $('#puzzle9').click(function(ev){
+     ev.preventDefault();
     $('.all').hide();
-    $('.jumbled').fadeIn(2000);
+    $('.puzzle').fadeIn(1500);
+  });
+
+  $('#jumbled9').click(function(ev){
+     ev.preventDefault();
+    $('.all').hide();
+    $('.jumbled').fadeIn(1500);
   });
 
   $('#psd1').click(function(){
